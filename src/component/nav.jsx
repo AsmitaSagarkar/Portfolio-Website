@@ -26,10 +26,10 @@ export default function Nav() {
                         <img src={Logo} className="heading" alt="" />
                         <nav className="nav1" >
                             <ul className="item">
-                               <NavLink to ="/" className="anchor" href="index.html"><HomeIcon className="fa-solid" /></NavLink>
-                               <NavLink to ="/about"   className="anchor" href="intro.html"><AccountBoxIcon className="fa-solid" /></NavLink>
-                               <NavLink to ="/project" className="anchor" href="projects.html"><BusinessCenterIcon className="fa-solid" /></NavLink>
-                               <NavLink to ="/contact" className="anchor" href="contact.html"><PermPhoneMsgIcon className="fa-solid" /></NavLink>
+                               <li><NavLink to ="/" className="anchor"><HomeIcon className="fa-solid" /></NavLink></li>
+                               <NavLink to ="/about"   className="anchor" ><AccountBoxIcon className="fa-solid" /></NavLink>
+                               <NavLink to ="/project" className="anchor" ><BusinessCenterIcon className="fa-solid" /></NavLink>
+                               <NavLink to ="/contact" className="anchor" ><PermPhoneMsgIcon className="fa-solid" /></NavLink>
 
                             </ul>
 
