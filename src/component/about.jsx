@@ -15,34 +15,29 @@ import Robo from "../images/robo 3t.png";
 import Image from "../images/aboutBg.png";
 import Sql from "../images/mysql.png";
 import "./about.css";
-
-
-
-
-
-
-
+import Women from "../images/3dwoman.png"
 
 export default function About(){
-    <>
-    <div>
+    return(
+    <div className="aboutstart">
+    
     <div class="first">
-        <div class="heading1"><span class="flicker">A</span><span>bo</span><span
-                class="flicker">u</span><span>t</span><span> Me</span><span class="flicker">!</span></div>
+        <div class="heading1"><span class="flicker span">A</span><span className="span">bo</span><span
+                class="flicker span">u</span><span  className="span">t</span><span> Me</span><span class="flicker span">!</span></div>
         <div class="bg"></div>
-        <img class="img" src={Image} alt="" />
+        <img class="img" src={Women} alt="" />
     </div>
-    <div class="mid">
-        <div class="left">
+    <div class="mid1">
+        <div class="aboutleft">
             <div class="leftinner">
                 <img src={Image} alt="" />
             </div>
         </div>
-        <div class="right">
+        <div class="aboutright">
             <div class="rightinner">
                 <h2>Welcome to my world of passion and potential!🌟</h2>
-                <p>Greetings! I'm <span style={{color: "#27ae60"}}>Asmita Sagarkar</span>, a highly motivated <span
-                        style={{color: "#27ae60"}}>web developer</span> with a passion for creating engaging and
+                <p>Greetings! I'm <span style={{color: "#27ae60" ,fontSize :"20px"}}>Asmita Sagarkar</span>, a highly motivated <span
+                        style={{color: "#27ae60" ,fontSize :"20px"}}>web developer</span> with a passion for creating engaging and
                     user-friendly websites. Currently pursuing my B.Tech degree in the Computer Science with a focus on
                     web development, I thrive on turning ideas into functional and aesthetically
                     pleasing online platforms.</p>
@@ -63,7 +58,7 @@ export default function About(){
     </div>
     <div class="last">
         <h1>Welcome to My Skill Set!</h1>
-        <p>Unlocking potential, one skill at a time - as a fresh and motivated <span style={{color: "#27ae60"}}>Front-End
+        <p>Unlocking potential, one skill at a time - as a fresh and motivated <span style={{color: "#27ae60" ,fontSize :"20px"}}>Front-End
                 Developer</span> enthusiast, I proudly present the foundations of my abilities, ready to take on new
             challenges and make a lasting impact.</p>
         <div class="lastinner">
@@ -85,7 +80,14 @@ export default function About(){
         </div>
 
     </div>
-    </div>
+    <footer>
+        <p>Thank you for taking the time to get to know me!</p>
+
+
+    </footer>
+
     
-    </>
+    
+    </div>
+    );
 }

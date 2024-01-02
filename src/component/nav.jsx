@@ -19,15 +19,17 @@ export default function Nav() {
     return (
 
         <>
-            <div>
+            
                 <div className="navbar1" id="nav">
                     <header className={isOpen ? "active header":"header"}>
 
                         <img src={Logo} className="heading" alt="" />
                         <nav className="nav1" >
                             <ul className="item">
-                               <li><NavLink to ="/" className="anchor"><HomeIcon className="fa-solid" /></NavLink></li>
-                               <NavLink to ="/about"   className="anchor" ><AccountBoxIcon className="fa-solid" /></NavLink>
+                               <NavLink to ="/home" className="anchor">
+                               <HomeIcon className="fa-solid" />
+                               </NavLink>
+                               <NavLink to ="/about"   className="anchor"  ><AccountBoxIcon className="fa-solid" /></NavLink>
                                <NavLink to ="/project" className="anchor" ><BusinessCenterIcon className="fa-solid" /></NavLink>
                                <NavLink to ="/contact" className="anchor" ><PermPhoneMsgIcon className="fa-solid" /></NavLink>
 
@@ -46,7 +48,7 @@ export default function Nav() {
                     </header>
                 </div>
 
-            </div>
+            
 
 
         </>

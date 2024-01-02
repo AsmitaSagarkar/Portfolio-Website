@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import Nav from "./component/nav";
 import Project from "./component/project";
-import About from "./component/about";
+import About from "./component/about.jsx";
 import Contact from "./component/contact";
 import Home from "./component/home";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
@@ -11,7 +11,7 @@ function AppLayout() {
   return (
     <>
       
-      <div className="app">
+      <div className="applayout">
         <Nav />
         <Outlet />
       </div>
@@ -23,13 +23,16 @@ const appRouter = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
-     
       {
-        path: "/",
+        path:"/",
+        element: <Home />
+      },
+      {
+        path: "/Home",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {

@@ -46,7 +46,7 @@ export default function Home() {
                             <div className="button">
                                 <Link className="btn1 commonbutton button1" id="btn1" to="https://drive.google.com/file/d/1feQrqfPEgfBONcozc1SyTZ5vEPcwPLH_/view?usp=sharing"  >
                                     Download my CV</Link>
-                                    <Link className="btn2 commonbutton button1" id="btn2" to="/About"  >
+                                    <Link className="contactbtn2 commonbutton button1" id="btn2" to="/About"  >
                                     Read More</Link>
                             </div>
                     </div>
