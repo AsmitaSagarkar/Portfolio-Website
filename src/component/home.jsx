@@ -11,11 +11,11 @@ export default function Home() {
                 <div class="left">
 
                     <div class="leftside ">
-                        <span class="para">
-                            <span class="hi">Hi, I'm</span>
+                        <span class="para homespan">
+                            <span class="hi homespan">Hi, I'm</span>
                             <span class="color" style={{color: "#27ae60"}} > Asmita Sagarkar.</span>
                             <br />
-                            <span class="iam"> I'm a </span>
+                            <span class="iam homespan"> I'm a </span>
                             
 
 
@@ -46,7 +46,7 @@ export default function Home() {
                             <div className="button">
                                 <Link className="btn1 commonbutton button1" id="btn1" to="https://drive.google.com/file/d/1feQrqfPEgfBONcozc1SyTZ5vEPcwPLH_/view?usp=sharing"  >
                                     Download my CV</Link>
-                                    <Link className="contactbtn2 commonbutton button1" id="btn2" to="/About"  >
+                                    <Link className="btn2 commonbutton button1" id="btn2" to="/About"  >
                                     Read More</Link>
                             </div>
                     </div>

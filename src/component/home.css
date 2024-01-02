@@ -79,6 +79,9 @@ button .btn1 {
     padding-right: 15px;
     
 }
+.mid{
+    margin-top: 50px;
+}
 
 .btn2 {
     justify-content: center;
@@ -100,7 +103,7 @@ button .btn1 {
     transition: 0.7s;
 }
 
-span {
+.homespan {
     position: relative;
     font-family: "Poppins", sans-serif;
     font-size: 50px;
@@ -138,7 +141,7 @@ span {
         margin-bottom: 50px;
     }
 
-    span {
+    .homespan {
         font-size: 35px;
         padding: 10px;
     }

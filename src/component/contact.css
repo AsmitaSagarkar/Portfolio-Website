@@ -1,3 +1,122 @@
+.contactab{
+    color: aliceblue;
+    text-shadow: none;
+    
+}
+.contactme{
+    color: #27ae60;
+    text-shadow: none;
+}
+
+.contacth1 {
+    
+    text-align: center;
+    
+    overflow: hidden;
+    padding-top: 20px;
+   
+    
+
+
+}
+.contacth1 h1{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+    
+}
+.contactbgtext{
+    
+    
+    font-size: 5rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: -1;
+    transition: all 0.contact4s ease-in-out;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    color: #2a2e35;
+    text-shadow: none;
+}
+
+@media (max-width:60rem){
+    .contactbgtext{
+        color: #8187916e;
+        font-size: 4rem;
+    }
+}
+.contacthshape{
+    transition: all 0.contact4s ease-in-out;
+    width: 50%;
+    height: 100%;
+    background-color: #27ae60;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+/* nav styling */
+
+
+/* .contactanchor{
+    color: aliceblue;
+}
+.contactnav{
+    z-index: 110;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+} */
+
+
+/* .contact */
+.contactnav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+.contactitem{
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    padding-left: 0;
+    background-color: rgba(0,0,0,0.contact3);
+    padding: 5px;
+    border-radius: 50px;
+}
+.contactitem li{
+    list-style: none;
+    text-decoration: none;
+    background-color: #27ae60;
+    padding: 10px;
+    border-radius: 100%;
+}
+.contactnav .contactitem li .i{
+    color: aliceblue;
+    
+}
+
+
+@media (max-width:60rem){
+    .contactitem{
+        width: auto;
+        font-size: 15px;
+    }
+}
+/*Mid*/
 .contactgrid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -19,7 +138,7 @@
     
 }
 .contactright{
-    z-index: 2;
+    z-index: 10;
     display: flex;
     /* flex-direction: column;*/
     justify-content: center; 
@@ -33,19 +152,20 @@
     background-color: #171c23;
     width: auto;
     height: auto;
-    padding: 25px;
+    padding: 20px;
+    margin-top: 10px;
     /* padding: 50px;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px; */
     box-shadow: 0 0 25px rgba(39, 174, 96, 0.5);
 }
 .contactimg{
-    width: 10rem;
-    height:10rem;
+    width: 30rem;
+    height:30rem;
     border-radius: 100%;
 }
 .contactname{
-    margin-top: 20px;
+    
     font-size: 45px;
     margin-bottom: 0;
 }
@@ -74,9 +194,9 @@
     
     
 }
-/* .info span{
+/* .contactinfo span{
     animation: flip 2s infinite;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.contact2s * var(--i));
    
 }
 @keyframes flip{
@@ -90,14 +210,14 @@
 .contactright button{
     background-color: #27ae60;
 }
-.contactin .username{
+.contactin .contactusername{
     word-break: break-all;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 30px;
    margin-left: 50px;
 }
 .contactusername:hover{
-    transform: scale(1.1);
+    transform: scale(1.contact1);
     transition: 200ms;
     display: inline-block;
     color: #27ae60;
@@ -112,16 +232,19 @@
     text-decoration: none;
    
 }
-.contactsocialIcons .in{
+.contactsocialIcons .contactin{
     margin: 0;
 }
 
-.contactin i{
+.contactin .i{
     font-size: 30px;
 }
 
-
-.contactin i:hover{
+.contactin span{
+    display: flex;
+    align-items: center;
+}
+.contactin .i:hover{
     transform: scale(1.5);
     transition: 200ms ease;
     
@@ -134,7 +257,8 @@
 }
 
 
-@media (max-width : 60rem){
+
+@media (max-width : 80rem){
     
     
     .contactgrid{
@@ -142,15 +266,15 @@
         margin-right: 0;
         margin-left: 0;
     }
-    .contacth1img{
+    .contactimg{
         z-index: 100;
         height: 25rem;
     }
-    .contacth2{
+    h2{
         z-index: 101;
 
     }
-    .contacth1.h4{
+    h4{
         z-index: 102;
     }
     .contactname{

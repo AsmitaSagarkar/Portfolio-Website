@@ -1,5 +1,10 @@
 import "./contact.css"
-
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FolderIcon from '@mui/icons-material/Folder';
+import Image from "../images/contactbg.png"
 export default function Contact(){
     return(
         
@@ -12,32 +17,32 @@ export default function Contact(){
 
     <div className="contactgrid">
         <div className="contactleft"data-aos="fade-right">
-         <img src="images/contactbg.png" alt=""  className="contactimg"/>
+         <img src={Image} alt=""  className="contactimg"/>
         </div>
-        <div classNameName="contactright"data-aos="fade-left">
+        <div className="contactright">
             
             <div className="contactsocialIcons">
-                <h1 className="contactinfo contacth1"><span className="contacttext">L</span><span className="contacttext">e</span><span className="contacttext">t</span><span className="contacttext">'</span><span className="contacttext">s</span><span className="contacttext"> C</span><span className="contacttext">o</span><span className="contacttext">n</span><span className="contacttext">n</span><span className="contacttext">e</span><span className="contacttext">c</span><span className="contacttext">t</span><span className="contacttext">!</span></h1>
+                <h1 className="contactinfo"><span className="contacttext">L</span><span className="contacttext">e</span><span className="contacttext">t</span><span className="contacttext">'</span><span className="contacttext">s</span><span className="contacttext"> C</span><span className="contacttext">o</span><span className="contacttext">n</span><span className="contacttext">n</span><span className="contacttext">e</span><span className="contacttext">c</span><span className="contacttext">t</span><span className="contacttext">!</span></h1>
                 <ul>
                 <li className="contactin">
-                    <span><i className="fa-brands fa-github" style={{color: "#e9ecf1"}}></i>
+                    <span><GitHubIcon className="i fa-brands fa-github" style={{color: "#e9ecf1"}} />
                     <span className="contactusername" id="github">@asmitasagarkar</span></span>
                 </li>
                 <li className="contactin">
-                    <span><i className="fa-brands fa-linkedin" style={{color: "#f1f4f9"}}></i>
+                    <span><LinkedInIcon className="i fa-brands fa-linkedin" style={{color: "#f1f4f9"}} />
                     <span  className="contactusername" id="linkedin">@asmita-sagarkar</span></span>
                 </li>
 
                 <li className="contactin">
-                    <span><i className="fa-brands fa-twitter" style={{color:"#ebecf0"}}></i><span className="contactusername" id="twitter">@asmitasagarkar</span></span>
+                    <span><TwitterIcon className="i fa-brands fa-twitter" style={{color:"#ebecf0"}} /><span className="contactusername" id="twitter">@asmitasagarkar</span></span>
                 </li>
                 
                 <li className="contactin">
-                    <span><i className="fa-regular fa-envelope" style={{color: "#eeeff1"}}></i>
+                    <span><EmailIcon className=" i fa-regular fa-envelope" style={{color: "#eeeff1"}} />
                     <span className="contactusername" id="mail">asmitasagarkar@gmail.com</span></span>
                 </li>
                 <li className="contactin">
-                    <span><i className="fa-regular fa-file" style={{color: "#e6e6e6"}}></i>
+                    <span><FolderIcon className="i fa-regular fa-file" style={{color: "#e6e6e6"}} />
                     <span className="contactusername" id="resume">Download My CV</span></span>
                 </li>
                 
