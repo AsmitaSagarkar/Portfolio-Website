@@ -10,7 +10,7 @@ export default function Card({details}){
         <div class="projectgrid">
             <div class="projectproject-items">
                 <div class="projectimg">
-                    <img src={details.backgorund} alt="Loading image...." />
+                    <img src={details.background} alt="Loading" />
                 </div>
                 <div class="projecthover-item">
                     <h3>Project Source</h3>
@@ -22,6 +22,8 @@ export default function Card({details}){
                         
                         
                     </div>
+
+
                     <div class="projectpmini projectmini" id="pmini">
                         <h3>{details.heading}</h3>
                         <p>{details.para}</p>
@@ -30,6 +32,6 @@ export default function Card({details}){
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     )
 }
