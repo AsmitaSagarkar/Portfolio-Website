@@ -7,12 +7,12 @@
     text-shadow: none;
     
 }
-/* .projectme{
+.projectme{
     color: #27ae60;
     text-shadow: none;
-} */
+}
 
-/* .projecth1 {
+.projecth1 {
     font-family:"Poppins", sans-serif;
     text-align: center;
     
@@ -64,7 +64,7 @@
     margin-right: 13rem;
     margin-top: 50px;
     margin-bottom: 2rem;
-} */
+}
 /* .projectproject-items{
     
     justify-content: center;
@@ -209,11 +209,12 @@
     width: 100%;
     height: 20rem;
     border-radius: 15px;
-    border: 2px solid aliceblue;
+    
     position: relative;
 
 }
 .projecthover-item{
+    display: flex;
     box-sizing: border-box;
     color: aliceblue;
     position: absolute;
@@ -227,11 +228,25 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    
+    transform: scale(0);
+    transition: all 0.project4s ease-in-out;
     flex-direction: column;
+    opacity:0;
    
     
    
+}
+.projectproject-items{
+    
+    justify-content: center;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+.projecthover-item{
+    width: 101%;
+    height: 20rem;
 }
 .projecthover-item h3{
     font-size: 30px;
@@ -241,8 +256,85 @@
 .projecticon{
     color: aliceblue;
     background-color: #001C30;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50px;
     align-items: center;
+    cursor: pointer;
 }
+.projectproject-items:hover .projecthover-item {
+    opacity: 1;
+    transform: scale(1);
+    
+}
+.projectproject-items:hover{
+    cursor: pointer;
+}
+.projecticons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.projectmini{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 101%;
+    height: 21rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #171c23;
+    
+    
+    border: 2px solid aliceblue;
+}
+.projectmini h3{
+    margin-top: 60px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+.projectmini p{
+    color: #27ae60;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.projectclose{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+@media (max-width:60rem) {
+    
+    .projectgrid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 50px;
+        margin-left: 13rem;
+        margin-right: 13rem;
+        margin-top: 50px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
+    }
+    .projecthover-item h3{
+        font-size: 25px;
+    }
+    .projectmini h3{
+        font-size: 15px;
+    }
+    .projectmini p{
+        font-size: 15px;
+    }
+    
+}
+
 

@@ -5,40 +5,54 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import { useCallback, useState } from "react";
 import CancelIcon from '@mui/icons-material/Cancel';
-import { debounce } from "lodash";
+
 
 export default function Card({details}){
 
-    const [onMouseHover,setOnMouseHover] = useState(false);
+    
     const [onShow,setOnShow]=useState(false);
-    const debounceState = useCallback(debounce(setOnMouseHover,2000),[]);
+    const [buttonStyle, setButtonStyle] = useState({
+        backgroundColor: '#001C30',
+        color: 'aliceblue'  
+      });
+    
+      const handleClick = () => {
+        setButtonStyle({
+          backgroundColor: 'aliceblue',
+          color: '#001C30'
+        });
+        setTimeout(() => {
+            setButtonStyle({
+                backgroundColor: '#001C30',
+                color: 'aliceblue'
+              });
+        }, 2000);
+      }
+    
     
     return (
 
-        <div class="projectgrid">
+        <div>
             <div class="projectproject-items">
-            <div class="projectimg" 
-                onMouseEnter={()=>debounceState(true)}
-                onMouseLeave={()=>debounceState(false)}
-                
-                
-                >
+            <div class="projectimg"  >
                     <img src={details.background} alt="Loading" className="bgimage" />
                 </div>
 
-                {onMouseHover && (<div class="projecthover-item fade-enter fade-enter-active">
+                <div class="projecthover-item">
                     <h3>Project Source</h3>
                     <div class="projecticons">
-                        <Link className="projecticon" to={details.github}>{<GitHubIcon />}</Link>
+                        <Link className="projecticon" to={details.github}
+                        style={buttonStyle}
+                        onClick={handleClick}>{<GitHubIcon />}</Link>
                         <Link className="projecticon" to={details.link}>{<LaunchIcon />}</Link>
                         <button className="projecticon" onClick={()=>setOnShow(true)}>{<TipsAndUpdatesIcon />}</button>
                     </div>  
-                </div>)}
+                </div>
 
-                {onShow && (<div class="projectpmini projectmini" id="pmini">
+                {onShow && (<div className="projectmini" id="pmini">
                         <h3>{details.heading}</h3>
-                        <p>{details.para}</p>
-                        <CancelIcon onClick={()=>setOnShow(false)} />
+                        <p>{details.paragraph}</p>
+                        <CancelIcon onClick={()=>setOnShow(false)} className="projectclose" />
 
                 </div>)}
             </div>
