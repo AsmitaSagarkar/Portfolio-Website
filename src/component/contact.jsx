@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FolderIcon from '@mui/icons-material/Folder';
 import Image from "../images/contactbg.png"
+import {Link} from "react-router-dom"
 export default function Contact(){
     return(
         
@@ -13,10 +14,11 @@ export default function Contact(){
         <h1><span className="contactab contacth1">Contact</span><span className="contactme"> Me</span><span className="contactbgtext">Contact</span></h1>
     </div>\
     <div className="contacthshape"></div>
+    <div className="contacthshape2"></div>
 
 
     <div className="contactgrid">
-        <div className="contactleft"data-aos="fade-right">
+        <div className="contactleft">
          <img src={Image} alt=""  className="contactimg"/>
         </div>
         <div className="contactright">
@@ -26,24 +28,24 @@ export default function Contact(){
                 <ul>
                 <li className="contactin">
                     <span><GitHubIcon className="i fa-brands fa-github" style={{color: "#e9ecf1"}} />
-                    <span className="contactusername" id="github">@asmitasagarkar</span></span>
+                    <Link className="contactusername" to="https://github.com/AsmitaSagarkar" target="_blank">@asmitasagarkar</Link></span>
                 </li>
                 <li className="contactin">
                     <span><LinkedInIcon className="i fa-brands fa-linkedin" style={{color: "#f1f4f9"}} />
-                    <span  className="contactusername" id="linkedin">@asmita-sagarkar</span></span>
+                    <Link  className="contactusername" to="https://www.linkedin.com/in/asmita-sagarkar-949a08201" target="_blank">@asmita-sagarkar</Link></span>
                 </li>
 
                 <li className="contactin">
-                    <span><TwitterIcon className="i fa-brands fa-twitter" style={{color:"#ebecf0"}} /><span className="contactusername" id="twitter">@asmitasagarkar</span></span>
+                    <span><TwitterIcon className="i fa-brands fa-twitter" style={{color:"#ebecf0"}} /><Link to="https://twitter.com/AsmitaSagarkar" className="contactusername" target="_blank">@asmitasagarkar</Link></span>
                 </li>
                 
                 <li className="contactin">
                     <span><EmailIcon className=" i fa-regular fa-envelope" style={{color: "#eeeff1"}} />
-                    <span className="contactusername" id="mail">asmitasagarkar@gmail.com</span></span>
+                    <Link className="contactusername" to="mailto:asmitasagarkar@gmail.com" target="_blank">asmitasagarkar@gmail.com</Link></span>
                 </li>
                 <li className="contactin">
                     <span><FolderIcon className="i fa-regular fa-file" style={{color: "#e6e6e6"}} />
-                    <span className="contactusername" id="resume">Download My CV</span></span>
+                    <Link className="contactusername" to="https://drive.google.com/file/d/1feQrqfPEgfBONcozc1SyTZ5vEPcwPLH_/view?usp=sharing" target="_blank">Download My CV</Link></span>
                 </li>
                 
             </ul>

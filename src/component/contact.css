@@ -48,14 +48,25 @@
 }
 .contacthshape{
     transition: all 0.contact4s ease-in-out;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: #27ae60;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 50%;
     z-index: 0;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.contacthshape2{
+    transition: all 0.contact4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: #27ae60;
+    position: fixed;
+    left:0;
+    top: 50%;
+    z-index: 0;
+    clip-path: polygon(0% 0, 0% 100%, 100% 100%);
 }
 
 /* nav styling */
@@ -210,14 +221,14 @@
 .contactright button{
     background-color: #27ae60;
 }
-.contactin .contactusername{
+ .contactin .contactusername  {
     word-break: break-all;
     color: aliceblue;
     font-size: 30px;
-   margin-left: 50px;
+   margin-left: 50px;  
 }
 .contactusername:hover{
-    transform: scale(1.contact1);
+    transform: scale(1.1);
     transition: 200ms;
     display: inline-block;
     color: #27ae60;

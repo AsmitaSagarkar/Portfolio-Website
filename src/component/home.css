@@ -97,11 +97,13 @@ button .btn1 {
     
 }
 
-.button1:hover {
+.commonbutton:hover {
     cursor: pointer;
     background-color: #27ae60;
     transition: 0.7s;
 }
+
+
 
 .homespan {
     position: relative;

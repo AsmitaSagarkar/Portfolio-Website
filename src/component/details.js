@@ -5,6 +5,7 @@ import Todolist from "../images/todolist.gif";
 import Emoji from "../images/emoji.gif";
 import Startup from "../images/startup.gif";
 import Weather from "../images/weather.gif";
+import Movie from "../images/movie.gif"
 
 
 
@@ -79,6 +80,16 @@ const Detail = [
         paragraph:"This website provides real-time weather information along with 3-hour forecasts for the next 5 days.Powered by frontend technologies, Node.js, Express, and EJS.Check-out my fully responsive Website!"
 
     },
+    {
+        key:8,
+        background : Movie,
+        github:"https://github.com/AsmitaSagarkar/Movie_Pulse",
+        link:"https://asmitasagarkar.github.io/Movie_Pulse/",
+        
+        heading:"Welcome to my Movie Website!🍿🎬",
+        paragraph:"Unleash the world of cinema on my React and Tailwind CSS-powered movie website. Sleek design, seamless navigation, and a curated film collection make it a go-to for movie enthusiasts!"
+
+    }
     
 
 

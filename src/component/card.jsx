@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import { useCallback, useState } from "react";
+import {  useState } from "react";
 import CancelIcon from '@mui/icons-material/Cancel';
 
 
@@ -26,7 +26,60 @@ export default function Card({details}){
                 backgroundColor: '#001C30',
                 color: 'aliceblue'
               });
-        }, 2000);
+        }, 700);
+      }
+
+
+      const [linkButtonStyle, setLinkButtonStyle] = useState({
+       
+        color: 'aliceblue'  
+      });
+    
+      const linkHandleClick = () => {
+        setLinkButtonStyle({
+          backgroundColor: 'aliceblue',
+          color: '#001C30'
+        });
+        setTimeout(() => {
+            setLinkButtonStyle({
+                backgroundColor: '#001C30',
+                color: 'aliceblue'
+              });
+        }, 700);
+      }
+
+      const [sourceButtonStyle, setSourceButtonStyle] = useState({
+        backgroundColor: '#001C30',
+        color: 'aliceblue'  
+      });
+    
+      const sourceHandleClick = () => {
+        setSourceButtonStyle({
+          backgroundColor: 'aliceblue',
+          color: '#001C30'
+        });
+        setTimeout(() => {
+            setSourceButtonStyle({
+                backgroundColor: '#001C30',
+                color: 'aliceblue'
+              });
+        }, 700);
+      }
+
+
+      const [closeButtonStyle, setCloseButtonStyle] = useState({
+        color: 'aliceblue'  
+      });
+    
+      const closeHandleClick = () => {
+        setCloseButtonStyle({
+          color: '#27ae60'
+        });
+        setTimeout(() => {
+            setCloseButtonStyle({
+                color: 'aliceblue'
+              });
+        }, 700);
       }
     
     
@@ -44,15 +97,29 @@ export default function Card({details}){
                         <Link className="projecticon" to={details.github}
                         style={buttonStyle}
                         onClick={handleClick}>{<GitHubIcon />}</Link>
-                        <Link className="projecticon" to={details.link}>{<LaunchIcon />}</Link>
-                        <button className="projecticon" onClick={()=>setOnShow(true)}>{<TipsAndUpdatesIcon />}</button>
+                        <Link className="projecticon" to={details.link}
+                        style={linkButtonStyle}
+                        onClick={linkHandleClick}
+                        >{<LaunchIcon />}</Link>
+                        <button className="projecticon" onClick={()=>{
+                            setTimeout(() => {
+                                setOnShow(true);
+                            }, 200);
+                            sourceHandleClick();}}
+                        style={sourceButtonStyle}
+                        
+                        >{<TipsAndUpdatesIcon />}</button>
                     </div>  
                 </div>
 
                 {onShow && (<div className="projectmini" id="pmini">
                         <h3>{details.heading}</h3>
                         <p>{details.paragraph}</p>
-                        <CancelIcon onClick={()=>setOnShow(false)} className="projectclose" />
+                        <CancelIcon onClick={()=>{
+                            setTimeout(() => {
+                                setOnShow(false); 
+                            }, 200);
+                            closeHandleClick();}} className="projectclose" style={closeButtonStyle} />
 
                 </div>)}
             </div>
