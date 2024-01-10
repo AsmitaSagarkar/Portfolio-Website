@@ -60,6 +60,7 @@ a {
 }
 
 
+
 .anchor {
     color: aliceblue;
     font-family: 'Roboto Slab', serif;
@@ -164,7 +165,7 @@ a {
        
         height: auto;
     
-        position: fixed;
+        position: absolute;
         margin-top: 80px;
         padding-top: 25px;
         padding-right: 20px;

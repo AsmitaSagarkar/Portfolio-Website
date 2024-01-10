@@ -1,3 +1,8 @@
+.contactstart{
+    margin-top: 50px;
+}
+
+
 .contactab{
     color: aliceblue;
     text-shadow: none;
@@ -117,8 +122,7 @@
         font-size: 15px;
     }
     .contacthshape{
-        top:50%;
-        width: 100%;
+        display: none;
     }
 }
 /*Mid*/
