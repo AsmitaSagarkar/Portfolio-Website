@@ -165,7 +165,7 @@ a {
        
         height: auto;
     
-        position: absolute;
+        position: fixed;
         margin-top: 80px;
         padding-top: 25px;
         padding-right: 20px;
