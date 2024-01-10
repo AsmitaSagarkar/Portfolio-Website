@@ -14,7 +14,7 @@ export default function Contact(){
         <h1><span className="contactab contacth1">Contact</span><span className="contactme"> Me</span><span className="contactbgtext">Contact</span></h1>
     </div>\
     <div className="contacthshape"></div>
-    <div className="contacthshape2"></div>
+    
 
 
     <div className="contactgrid">
@@ -45,7 +45,7 @@ export default function Contact(){
                 </li>
                 <li className="contactin">
                     <span><FolderIcon className="i fa-regular fa-file" style={{color: "#e6e6e6"}} />
-                    <Link className="contactusername" to="https://drive.google.com/file/d/1feQrqfPEgfBONcozc1SyTZ5vEPcwPLH_/view?usp=sharing" target="_blank">Download My CV</Link></span>
+                    <Link className="contactusername" to="https://drive.google.com/file/d/1sRh7UQlZOTOamTz9qfQHjzQK0yfK-qtJ/view?usp=sharing" target="_blank">Download My CV</Link></span>
                 </li>
                 
             </ul>

@@ -47,27 +47,17 @@
     }
 }
 .contacthshape{
-    transition: all 0.contact4s ease-in-out;
-    width: 100%;
+    transition: all 0.4s ease-in-out;
+    width: 50%;
     height: 100%;
     background-color: #27ae60;
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 0;
     z-index: 0;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
-.contacthshape2{
-    transition: all 0.contact4s ease-in-out;
-    width: 100%;
-    height: 100%;
-    background-color: #27ae60;
-    position: fixed;
-    left:0;
-    top: 50%;
-    z-index: 0;
-    clip-path: polygon(0% 0, 0% 100%, 100% 100%);
-}
+
 
 /* nav styling */
 
@@ -125,6 +115,10 @@
     .contactitem{
         width: auto;
         font-size: 15px;
+    }
+    .contacthshape{
+        top:50%;
+        width: 100%;
     }
 }
 /*Mid*/
@@ -315,6 +309,11 @@
     }
     .contactusername{
         margin-left: 10px;
+        
+    }
+    .contactin .contactusername{
+
+        font-size: 15px;
     }
     ul{
         padding-left: 0;
